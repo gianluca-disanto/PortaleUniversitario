@@ -1,0 +1,51 @@
+  .userInfo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mainGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .spaceInGrid {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+  }
+
+  .spaceHeader {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--gray-200);
+    background: var(--gray-100);
+  }
+
+  .spaceTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .spaceTitle::before {
+    content: attr(data-icon);
+    font-size: 1.1rem;
+  }
+
+  .spaceBody {
+    padding: 1.5rem;
+  }
+
+  .notification-item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+  }

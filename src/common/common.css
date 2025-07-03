@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-blue: #1e3a8a;
+    --secondary-blue: #3b82f6;
+    --light-blue: hsla(204, 33%, 84%, 0.396);
+    --light-blue1: hsl(214, 95%, 93%);
+    --success-green: #059669;
+    --warning-orange: #d97706;
+    --danger-red: #dc2626;
+    --gray-50: #ffffff00;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-600: #4b5563;
+    --gray-800: #1f2937;
+    --white: #ffffff;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0, 0, 0);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--gray-800);
+    background-color: var(--light-blue);
+}
+
+
+.main-content {
+    margin-left: 260px;
+    margin-top: 70px;
+    padding: 2rem;
+    min-height: calc(100vh - 70px);
+}
+
+
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.btn-primary {
+    background: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #545b62;
+}
+
+.btn-success {
+    background: #28a745;
+    color: white;
+}
+
+.btn-success:hover {
+    background: #1e7e34;
+}
+
+.btn-danger {
+    background: #dc3545;
+    color: white;
+}
+.btn-notification {
+
+    background: #dc3545;
+    color: white;
+    position: relative;
+    right: 0;
+
+
+}
+
+.btn-danger:hover {
+    background: #c82333;
+}
+
+.btn-outline {
+    background: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.btn-outline:hover {
+    background: #007bff;
+    color: white;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+}
+
+
+.menuTendina {
+    display: none;
+    position: absolute;
+    top: 100%;
+   /* top: 30px;*/
+    right: 0;
+    color: white;
+    list-style: none;
+    padding: 0.5rem;
+    margin: 0;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    cursor: pointer;
+    background-color: rgb(255,255,255); 
+}
+.menuTendina.aperto {
+    display: block;
+}
+
+.menuTendina li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.menuTendina li:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.tendina {
+    position: relative;
+    display: inline-block;
+}
+
+.tendinaButton {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 20px;
+    color: white;
+}
+.userInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+.sidebar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 260px;
+    height: calc(100vh - 70px);
+    background: var(--white);
+    box-shadow: var(--shadow-md);
+    padding: 2rem 0;
+    
+    overflow-y: auto;
+    font-size: 24px;
+  }
+
+
+header {
+    background: linear-gradient(90deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    color: rgb(255,255,255);
+    color: var(--white);
+    flex-shrink: 0;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: var(--shadow-md);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 70px;
+    align-items: center;
+  }
+  
+  footer{
+    background: linear-gradient(90deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    color: rgb(255,255,255);
+    color: var(--white);
+    flex-shrink: 0;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: var(--shadow-md);
+    /*position: fixed;*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 50px;
+    align-items: center; 
+    position: relative;
+  }
+
+  main {
+    flex: 1;
+    padding: 20px;
+    
+  }
+  
+  aside ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  aside li {
+    margin: 10px 0;
+  }
+  
+  aside a {
+    text-decoration: none;
+    /*color: #333;*/
+    color: var(--primary-blue);
+    font-weight: bold;
+  }
+  aside {
+    width: 250px;
+    background-color: #f0f0f0;
+    height: 100vh; 
+    padding: 20px;
+  }
+
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table th, .table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--gray-200);
+  }
+
+  .table th {
+    background: var(--gray-100);
+    font-weight: 600;
+    color: var(--gray-800);
+    font-size: 0.9rem;
+  }
+
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.statCard {
+    
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.statCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--secondary-blue);
+}
+
+.statNumber {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+}
+
+.statLabel {
+    color: var(--gray-600);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.userInfo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .mainGrid {
+    display: grid;
+    
+    /*grid-template-columns: 2fr 1fr;*/
+    gap: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .spaceInGrid {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    overflow: auto;
+    width: 100%;
+  }
+
+  .spaceHeader {
+    padding: 1.5rem;
+    background: var(--gray-100);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .spaceTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .spaceBody {
+    padding: 1.5rem;
+  }

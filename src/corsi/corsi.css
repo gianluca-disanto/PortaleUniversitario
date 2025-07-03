@@ -1,0 +1,63 @@
+
+.course-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-left: 4px solid #007bff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.course-header {
+    display: flex;
+    justify-content: between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.course-title {
+    color: #2c3e50;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.course-cfu {
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+.course-info {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.course-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.no-courses {
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+}
+
+.no-courses h3 {
+    color: #999;
+    margin-bottom: 12px;
+}
+
